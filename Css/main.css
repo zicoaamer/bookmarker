@@ -1,0 +1,83 @@
+@font-face {
+    font-family: pacifico;
+    src: url(../Fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: Righteous;
+    src: url(../Fonts/Righteous-Regular.ttf);
+}
+::selection{
+    background-color: #CDC2AE;
+    color: #352E28;
+}
+body{
+    background-color: #ECE5C7 !important;
+    color: #116A7B !important;
+}
+
+/*interface*/
+.logo h1{
+    position: relative;
+    font-family: 'pacifico', cursive;
+    z-index: 5;
+    font-size: 50px;
+}
+.logo h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
+    background-color: #C2DEDC; 
+    transition: 0.6s;
+}
+.logo h1:hover::after{
+    height: 80%;
+}
+.interface hr{
+    border-style: dotted;
+    border-width: 2px;
+    width: 100%;
+}
+
+.row .sub h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #C7D8E5, #116A7B, #E5C7D8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#submit{
+    background-color: #C2DEDC;
+    color: #352E28;
+    font-family: "Righteous", cursive;
+}
+#submit:hover{
+    background-color: #116A7B;
+    color: #C2DEDC;
+    border-color: #116A7B;
+}
+
+#tableContent .btn-delete {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+#tableContent .btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+#tableContent .btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
